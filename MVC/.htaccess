@@ -1,0 +1,7 @@
+
+# On allume le module apache de réécriture d'url
+RewriteEngine On
+
+# On donne les caractères qu'on accèpte dans l'url et comment le paramètre va s'appliquer --> paramètre = index.php?p=$1 // exemple : localhost/index.php?p=home --> localhost/home
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
+
